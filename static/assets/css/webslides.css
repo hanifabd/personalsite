@@ -3841,7 +3841,11 @@ CSS Custom
   width: 80%;
 }
 
-@media only screen and (max-width: 800px) {
+.text-project {
+  font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 860px) {
   .favicon-hero {
     width: 10%;
   }
@@ -3849,7 +3853,10 @@ CSS Custom
   .hero {
     display: none;
   }
-  
+
+  .hidden-mobile {
+    display: none;
+  }
 
   .mt-m4 {
     margin-top: 16px;
@@ -3857,5 +3864,9 @@ CSS Custom
 
   .margin-mobile {
     margin-top: 80px;
+  }
+
+  .text-project {
+    font-size: 1.4rem;
   }
 }

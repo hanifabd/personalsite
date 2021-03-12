@@ -46,24 +46,24 @@
             <div class="wrap margin-mobile">
                 <div class="grid vertical-align">
                     <div class="column">
-                    <h1 class="googleLight">Hi! I'm <strong>Hanif</strong>, welcome to my site.</h1>
-                    <p class="googleLight">I come from <strong>Dian Nuswantoro Unversity</strong> as an Informatics student. I am very passionate in <strong>machine learning</strong> engineer with 1+ years experience of <strong>natural language processing, data analytics, and predictive modelling</strong>. I am very interested making an impact by learning more about <strong>automation</strong> to solve real world problems.</p>
-                    <div>
-                        <span class="bg-apple p-3">
-                            <a rel="external" href="https://www.linkedin.com/in/hanifabdlh/" title="LinkedIn">
-                                <svg class="fa-linkedin">
-                                <use xlink:href="#fa-linkedin"></use>
-                                </svg>
-                            </a>
-                        </span>               
-                        <span class="bg-apple p-3">
-                            <a rel="external" href="https://github.com/hanifabd" title="Github">
-                                <svg class="fa-github">
-                                <use xlink:href="#fa-github"></use>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
+                        <h1 class="googleLight">Hi! I'm <strong>Hanif</strong>, welcome to my site.</h1>
+                        <p class="googleLight">I come from <strong>Dian Nuswantoro Unversity</strong> as an Informatics student. I am very passionate in <strong>machine learning</strong> engineer with 1+ years experience of <strong>natural language processing, data analytics, and predictive modelling</strong>. I am very interested making an impact by learning more about <strong>automation</strong> to solve real world problems.</p>
+                        <div>
+                            <span class="bg-apple p-3">
+                                <a rel="external" href="https://www.linkedin.com/in/hanifabdlh/" title="LinkedIn">
+                                    <svg class="fa-linkedin">
+                                    <use xlink:href="#fa-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </span>               
+                            <span class="bg-apple p-3">
+                                <a rel="external" href="https://github.com/hanifabd" title="Github">
+                                    <svg class="fa-github">
+                                    <use xlink:href="#fa-github"></use>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                     <!-- .end .column -->
                     <div class="column">
@@ -83,20 +83,28 @@
             <center>
                 <h2>My Personal Projects</h2>
                 <hr>
-                <h6 style="color: grey;">Coming Soon on Updates</h6>
+                <!-- <h6 style="color: grey;">Coming Soon on Updates</h6> -->
             </center>
-            <!-- <div class="wrap">
+            <div class="wrap">
               <ul class="flexblock gallery">
+                <!-- =================================================================================================
+                start Sentence Boundary Disambiguation 
+                ================================================================================================= -->
                 <li>
-                    <a href="#">
+                    <a href="/ports/sbd-project">
                         <div class="overlay">
-                        <h2>New York</h2>
-                        <p>1,234 rooms</p>
+                        <h2>Sentence Boundary Disambiguation</h2>
+                        <p>(Natural Language Processing)</p>
                         </div>
-                        <img alt="Thumbnail " src="https://source.unsplash.com/-sQ4FsomXEs/800x600">
+                        <img alt="Thumbnail " src="{{ url_for('static', filename='assets/img/bg-content.png') }}">
                     </a>
                 </li>
-                <li>
+                <!-- =================================================================================================
+                end Sentence Boundary Disambiguation 
+                ================================================================================================= -->
+                
+
+                <li class="hidden-mobile" style="visibility:hidden">
                     <a href="#">
                         <div class="overlay">
                         <h2>uWatch</h2>
@@ -105,7 +113,7 @@
                         <img alt="Thumbnail" src="https://source.unsplash.com/vCF5sB7QecM/800x600">
                     </a>
                 </li>
-                <li>
+                <li class="hidden-mobile" style="visibility:hidden">
                     <a href="#">
                         <div class="overlay">
                         <h2>Ellen Daniels</h2>
@@ -115,11 +123,14 @@
                     </a>
                 </li>
               </ul>
-            </div> -->
+            </div>
             <!-- .end .wrap -->
             </div>
         </section>
     </main>
+    <footer class="w-100 p-2 bg-black">
+        <center><p>hanifabdlh&#169;2021</p></center>
+    </footer>
 </body>
 </html>
 

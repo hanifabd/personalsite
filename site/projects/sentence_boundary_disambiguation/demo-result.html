@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Boundary Disambiguation - Hanif Ports</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+
+    <!-- <link rel="shortcut icon" href="../../static/assets/img/favicon.png"> -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Bootstrap -->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS Base -->
+    <!-- <link rel="stylesheet" type='text/css' media='all' href="../../static/assets/css/webslides.css"> -->
+    <link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='assets/css/webslides.css') }}">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <!-- <link rel="stylesheet" type='text/css' media='all' href="../../static/assets/css/svg-icons.css"> -->
+    <link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='assets/css/svg-icons.css') }}">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+<body style="background-color: #ffffff;">
+    <!-- Navbar -->
+    <nav class="navbar w-100 mt-4 position-absolute z-upper">
+        <div class="navbar-brand w-100 ml-4">
+            <!-- <img class="pointer favicon-hero" src="../../static/assets/img/icons8-left-96.png" alt=""> -->
+            <img class="pointer favicon-hero" src="{{ url_for('static', filename='assets/img/icons8-left-96.png') }}" alt="" onclick="window.location='/ports/sbd-project'">
+        </div>
+    </nav>
+
+    <main>
+        <div id="content_wrapper" class="container-custom">
+            <section>
+                <div class="wrap">
+                    <ul class="flexblock">
+                        <li class="bg-light">
+                          <h1>Your Sentence:</h1>
+                          <div>{{ original_input }}</div>
+                        </li>
+                        {% if result %}
+                        <li class="bg-gray">
+                            <h1>Result:</h1>
+                            <ol>
+                                {% for sentence in result %}
+                                    <li style="font-size:18px">- {{ sentence }}</li>
+                                {% endfor %}
+                            </ol>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="w-100 p-2 bg-black">
+        <center><p>hanifabdlh&#169;2021</p></center>
+    </footer>
+</body>
+</html>
+
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="{{ url_for('static',filename='assets/js/intro.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/js/navpack.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/js/webslides.js') }}"></script>
