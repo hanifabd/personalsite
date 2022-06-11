@@ -7,9 +7,16 @@ section {
   height: 100vh;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 800px) {
   section {
     height: 70vh;
+  }
+  
+}
+
+@media only screen and (max-width: 960px) {
+  section {
+    height: 60vh;
   }
   
 }
@@ -44,7 +51,7 @@ section:nth-child(5) {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 800px) {
   .navbar-margin {
     margin-left: 20px;
     margin-right: 20px;
@@ -56,7 +63,7 @@ section:nth-child(5) {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 960px) {
   .web-only {
     display: none;
   }
@@ -68,7 +75,7 @@ section:nth-child(5) {
   padding-top: 160px;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 800px) {
   .hero-padding {
     padding-left: 8px !important;
     padding-right: 8px !important;
@@ -81,7 +88,7 @@ section:nth-child(5) {
   padding-right: 160px !important;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 720px) {
   .project-padding {
     padding-left: 8px !important;
     padding-right: 8px !important;
@@ -120,7 +127,7 @@ section:nth-child(5) {
   font-size: 64px;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 960px) {
   .text-hero {
     font-size: 36px;
   }  
@@ -155,7 +162,7 @@ section:nth-child(5) {
   width: 60%;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 720px) {
   .img-profile {
     width: 90%;
   }
