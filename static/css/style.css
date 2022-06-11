@@ -1,0 +1,192 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+section {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1050px) {
+  section {
+    height: 70vh;
+  }
+  
+}
+
+section:nth-child(1) {
+  background: #07293E;
+}
+section:nth-child(2) {
+  background: #48B5FF;
+}
+section:nth-child(3) {
+  background: white;
+}
+section:nth-child(4) {
+  background: red;
+}
+section:nth-child(5) {
+  background: yellow;
+}
+
+.navbar-margin {
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 64px
+}
+
+.navbar-brand-margin {
+  margin-left: 24px;
+}
+
+.navbar-connect-button {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .navbar-connect-button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .web-only {
+    display: none;
+  }
+}
+
+.hero-padding {
+  padding-left: 160px !important;
+  padding-right: 160px !important;
+  padding-top: 160px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .hero-padding {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 88px;
+  }
+}
+
+.project-padding {
+  padding-left: 160px !important;
+  padding-right: 160px !important;
+}
+
+@media only screen and (max-width: 1050px) {
+  .project-padding {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+.product-sans {
+  font-family: 'Product Sans', sans-serif;
+}
+
+.text-hero {
+  font-size: 86px;
+}
+
+.text-hero-desc {
+  font-size: 24px;
+}
+
+.text-project {
+  font-size: 64px;
+}
+
+.text-project-desc {
+  font-size: 48px;
+}
+
+.text-project-card {
+  font-size: 24px;
+}
+
+.text-project-card-cat {
+  font-size: 16px;
+}
+
+.text-profile {
+  font-size: 64px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .text-hero {
+    font-size: 36px;
+  }  
+  
+  .text-hero-desc {
+    font-size: 12px;
+  }
+
+  .text-project {
+    font-size: 36px;
+  }
+
+  .text-project-desc {
+    font-size: 24px;
+  }
+
+  .text-project-card {
+    font-size: 16px;
+  }
+  
+  .text-project-card-cat {
+    font-size: 10px;
+  }
+
+  .text-profile {
+    font-size: 42px;
+  }
+  
+}
+
+.img-profile {
+  width: 60%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .img-profile {
+    width: 90%;
+  }
+}
+
+.rounded-carousel {
+  border-radius: 25px;
+}
+
+.text-third {
+  color: #48B5FF;
+}
+
+.bg-third {
+  background-color: #48B5FF;
+}
+
+.container-project {
+  position: relative;
+  text-align: center;
+}
+
+.project-text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pointer {cursor: pointer;}
+
+#box2, #box3, #box4 {
+  display: none;
+}
