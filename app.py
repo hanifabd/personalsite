@@ -9,20 +9,5 @@ CORS(app)
 def home():
     return(render_template('index.html'))
 
-# ==============================================================
-# Route of Projects
-# ==============================================================
-
-# Sentence Boundary Disambiguation
-# @app.route('/ports/sbd-project', methods=['GET','POST'])
-# def sbd():
-#     if request.method == 'GET':
-#         return(render_template('projects/sentence_boundary_disambiguation/sentence_boundary_disambiguation.html'))
-#     if request.method == 'POST':
-#         temp_query = request.form['query']
-#         temp_result = sent_segment_svc(temp_query)
-#         # temp_result = temp_query.lower()
-#         return render_template('projects/sentence_boundary_disambiguation/demo-result.html', original_input=temp_query, result=temp_result)
-
 if __name__ == '__main__':
     app.run(debug=True)
