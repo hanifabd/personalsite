@@ -59,13 +59,13 @@
     <main>
         <section id="hero">
             <div class="container-fluid hero-padding">
-                <div class="container-fluid p-5">
+                <div class="container-fluid p-4">
                     <h1 class="text-third product-sans text-hero fw-bold lh-1 mt-3">Everythings <br> about my projects <br> attached here.</h1>
                     <h4 class="text-third product-sans text-hero-detail lh-base fst-italic mt-4">This websites is a place where i share everything that<br>i create, curate, and develop. All in on landing page.</h4>
                 </div>
-                <div class="px-5">
+                <div class="px-4">
                     <span class="bg-third py-3 px-5 rounded-pill pointer" onclick="location.href='/#projects'">
-                        <a class="text-dark text-decoration-none product-sans fw-bold" style="font-size: 20px;">Explore!</a>
+                        <a class="text-dark text-decoration-none product-sans fw-bold">Explore!</a>
                     </span>
                 </div>
             </div>
@@ -80,34 +80,51 @@
                         <div id="box1"><span class="product-sans text-project-desc text-light bg-dark p-1">natural language processing</span></div>
                         <div id="box2"><span class="product-sans text-project-desc text-light bg-dark p-1">image processing</span></div>
                         <div id="box3"><span class="product-sans text-project-desc text-light bg-dark p-1">timeseries</span></div>
-                        <div id="box4"><span class="product-sans text-project-desc text-light bg-dark p-1">visualization</span></div>
+                        <div id="box4"><span class="product-sans text-project-desc text-light bg-dark p-1">machine learning</span></div>
+                        <div id="box5"><span class="product-sans text-project-desc text-light bg-dark p-1">data analytics</span></div>
                     </center>                      
                 </div>
             </div>
             <!-- Set up your HTML -->
             <div class="owl-carousel mt-5">
 
+                {% if portData %}
+                    {% for link, category, title in portData%}
+                        <!-- Card item: start -->
+                        <div class="mx-1 pointer mx-2">
+                            <div class="container-project" onclick="location.href='{{ link }}'">
+                                <img class="rounded-carousel" src="{{ url_for('static', filename='img/bg-project.png') }}" alt="">
+                                <div class="project-text-bottom-left product-sans p-4">
+                                    <div class="text-project-card-cat fst-italic"><span class="text-secondary">{{ category }}</span></div>
+                                    <div class="text-project-card fw-bold text-decoration-underline mt-2">{{ title }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card item: end -->
+                    {% endfor %}
+                {% else %}
+                    <!-- Card item: start -->
+                    <div class="mx-1">
+                        <div class="container-project">
+                            <img class="rounded-carousel" src="{{ url_for('static', filename='img/bg-project-off.png') }}" alt="">
+                            <div class="project-text-centered text-project-card product-sans fw-bold">Something Wrong!</div>
+                        </div>
+                    </div>
+                    <!-- Card item: end -->
+                {% endif %}
                 <!-- Card item: start -->
-                <div class="mx-1">
-                    <div class="container-project">
-                        <img class="rounded-carousel" src="{{ url_for('static', filename='img/bg-project-off.png') }}" alt="">
-                        <div class="project-text-centered text-project-card product-sans fw-bold">Coming Soon</div>
+                <div class="mx-1 pointer">
+                    <div class="container-project" onclick="location.href='https://github.com/hanifabd'">
+                        <img class="rounded-carousel" src="{{ url_for('static', filename='img/bg-project.png') }}" alt="">
+                        <div class="project-text-centered">
+                            <center>
+                                <div class="text-project-card product-sans fw-bold">Others</div>
+                                <div class="text-project-card-cat fst-italic text-secondary">github.com/hanifabd</div>
+                            </center>
+                        </div>
                     </div>
                 </div>
                 <!-- Card item: end -->
-
-                <!-- Card item: start -->
-                <!-- <div class="mx-1 pointer">
-                    <div class="container-project" onclick="location.href='#'">
-                        <img class="rounded-carousel" src="{{ url_for('static', filename='img/bg-project.png') }}" alt="">
-                        <div class="project-text-centered product-sans w-100">
-                            <span class="text-project-card fw-bold">Sentence Boundary Disambiguation</span><br>
-                            <span class="text-project-card-cat fst-italic">Natural Language Processing</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Card item: end -->
-            </div> 
         </section>
 
         <section>

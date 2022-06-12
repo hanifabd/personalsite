@@ -116,7 +116,7 @@ section:nth-child(5) {
 }
 
 .text-project-card {
-  font-size: 24px;
+  font-size: 42px;
 }
 
 .text-project-card-cat {
@@ -182,7 +182,6 @@ section:nth-child(5) {
 
 .container-project {
   position: relative;
-  text-align: center;
 }
 
 .project-text-centered {
@@ -192,8 +191,14 @@ section:nth-child(5) {
   transform: translate(-50%, -50%);
 }
 
+.project-text-bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
 .pointer {cursor: pointer;}
 
-#box2, #box3, #box4 {
+#box2, #box3, #box4, #box5 {
   display: none;
 }
