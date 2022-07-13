@@ -3,22 +3,25 @@ body {
   height: 100%;
   margin: 0;
 }
-/* section {
-  height: 100vh;
+
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media only screen and (max-width: 800px) {
-  section {
-    height: 70vh;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #07293E; 
 }
 
-@media only screen and (max-width: 960px) {
-  section {
-    height: 60vh;
-  }
-  
-} */
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #48B5FF; 
+}
 
 section:nth-child(1) {
   background: #07293E;
