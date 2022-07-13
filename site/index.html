@@ -41,7 +41,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-margin navbar-light bg-white fixed-top rounded-pill animate__animated animate__fadeInDownBig" style="height: 80px;">
+        <nav class="navbar navbar-expand-lg navbar-margin navbar-light bg-white fixed-top rounded-pill animate__animated animate__fadeInDownBig" style="height: 72px;">
             <div class="container-fluid">
                 <a class="navbar-brand navbar-brand-margin" href="#"><img src="{{ url_for('static', filename='img/logo-only.png') }}" alt="" height="28"><span class="web-only fw-bold product-sans">  Repository</span></a>
                 <span class="navbar-text">
@@ -63,20 +63,20 @@
         <section id="hero">
             <div class="container-fluid hero-padding">
                 <div class="container-fluid p-4">
-                    <h1 class="text-third product-sans text-hero fw-bold lh-1 mt-3 animate__animated animate__fadeInLeftBig animate__delay-1s">Everythings <br> about my projects <br> attached here.</h1>
-                    <h4 class="text-third product-sans text-hero-detail lh-base fst-italic mt-4 animate__animated animate__fadeInDown animate__delay-2s">This websites is a place where i share everything that<br>i create, curate, and develop. All in on landing page.</h4>
+                    <h1 class="text-white product-sans text-hero fw-bold lh-1 mt-3 animate__animated animate__fadeInLeftBig animate__delay-1s">Everythings <br> about my projects <br> attached here.</h1>
+                    <h4 class="text-white product-sans text-hero-detail lh-base mt-4 animate__animated animate__fadeInDown animate__delay-2s">This websites is a place where i share everything that<br>i create, curate, and develop. All in on landing page.</h4>
                 </div>
-                <div class="px-4 animate__animated animate__fadeInDown animate__delay-3s">
+                <!-- <div class="px-4 animate__animated animate__fadeInDown animate__delay-3s">
                     <span class="bg-third py-3 px-5 rounded-pill pointer" onclick="location.href='/#projects'">
                         <a class="text-dark text-decoration-none product-sans fw-bold">Explore!</a>
                     </span>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <section id="projects">
-            <div class="container-fluid project-padding animate__animated animate__fadeInLeftBig animate__delay-4s">
-                <div class="container-fluid pt-5">
+            <div class="container-fluid project-padding animate__animated animate__fadeInLeftBig animate__delay-4s pt-4">
+                <div class="container-fluid pt-4">
                     <center>
                         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" height="28">
                         <h1 class="product-sans text-project fw-bold lh-1 mt-3 mb-3">Projects Showcase</h1>
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <!-- Set up your HTML -->
-            <div class="owl-carousel mt-5 animate__animated animate__fadeInLeftBig animate__delay-4s">
+            <div class="owl-carousel mt-5 animate__animated animate__fadeInLeftBig animate__delay-4s pb-5">
 
                 {% if portData %}
                     {% for link, category, title in portData%}
@@ -136,9 +136,61 @@
                     <center>
                         <img class="img-profile" src="{{ url_for('static', filename='img/profile.png') }}" alt="">
                         <h1 class="text-dark product-sans text-profile fw-bold lh-1 mt-5">“Hi! let’s connect with me in any channels. I am very happy to connect with you all.”</h1>
-                        <p class="product-sans mt-5 fw-bold">- Hanif Yuli Abdillah P -</p>
+                        <p class="product-sans mt-5 fw-bold">~ Hanif Yuli Abdillah P ~</p>
                     </center>
                 </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid project-padding">
+                <div class="container-fluid p-5">
+                    <!-- Gallery -->
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img
+                          src="{{ url_for('static', filename='img/204439207_945595399549232_4384501114673659046_n.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="UTeM BITS, Melaka, Malaysia"
+                        />
+                    
+                        <img
+                          src="{{ url_for('static', filename='img/b00981a313123695be9daea323134ef6.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="Petronas Tower, Kuala Lumpur, Malaysia"
+                        />
+                      </div>
+                  
+                      <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img
+                          src="{{ url_for('static', filename='img/IMG_20190724_084308.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="Prambanan Temple"
+                        />
+                    
+                        <img
+                          src="{{ url_for('static', filename='img/261052619_961826341422439_6936892543292477878_n.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="Selangor, Malaysia"
+                        />
+                      </div>
+                  
+                      <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img
+                          src="{{ url_for('static', filename='img/205248793_158336532992108_8782789361555195863_n.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="Dewan Canselor, UTeM, Melaka, Malaysia"
+                        />
+                    
+                        <img
+                          src="{{ url_for('static', filename='img/IMG_20190620_175720.jpg') }}"
+                          class="w-100 shadow-1-strong rounded mb-4"
+                          alt="Muzium Umno Melaka, Melaka, Malaysia"
+                        />
+                      </div>
+                    </div>
+                    <!-- Gallery -->
+                </div>      
             </div>
         </section>
     </main>

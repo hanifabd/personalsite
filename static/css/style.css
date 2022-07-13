@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
 }
-section {
+/* section {
   height: 100vh;
 }
 
@@ -18,7 +18,7 @@ section {
     height: 60vh;
   }
   
-}
+} */
 
 section:nth-child(1) {
   background: #07293E;
@@ -30,7 +30,7 @@ section:nth-child(3) {
   background: white;
 }
 section:nth-child(4) {
-  background: red;
+  background: white;
 }
 section:nth-child(5) {
   background: yellow;
@@ -71,14 +71,16 @@ section:nth-child(5) {
 .hero-padding {
   padding-left: 160px !important;
   padding-right: 160px !important;
-  padding-top: 160px;
+  padding-top: 240px;
+  padding-bottom: 180px;
 }
 
 @media only screen and (max-width: 800px) {
   .hero-padding {
     padding-left: 8px !important;
     padding-right: 8px !important;
-    padding-top: 88px;
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
 }
 
